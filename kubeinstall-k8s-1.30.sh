@@ -42,8 +42,7 @@ echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 echo "net.bridge.bridge-nf-call-iptables=1" >> /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 
-
-some people may use additional (if thet know what they doing):
+# some people may use additional (if thet know what they doing):
 sudo tee /etc/sysctl.d/kubernetes.conf <<EOF
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
